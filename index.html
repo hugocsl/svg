@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- My external CSS with Var Color -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <h3>This is inpire by this article: <a href="http://betravis.github.io/icon-methods/svg-sprite-sheets.html" target="_blank">http://betravis.github.io/icon-methods/svg-sprite-sheets.html</a></h3>
+
+    <p>SVG with symbols working</p>
+    <img class="icon triple" src="fish.svg">
+    
+    <p>This sprite dont load</p>
+    <svg class="icon single"><use xlink:href="fish.svg#beaker" /></svg>
+
+    <svg class="icon single"><use xlink:href="fish.svg#fish" /></svg>
+
+    <p>ERROR: Unsafe attempt to load URL "fish.svg#beaker" from frame with URL index.html. 'file:' URLs are treated as unique security origins.</p>
+
+
+
+</body>
+</html>

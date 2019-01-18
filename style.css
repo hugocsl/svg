@@ -1,0 +1,11 @@
+:root {
+    --azul: blue;
+}
+
+p {
+    color: var(--azul);
+}
+.icon { border: .2em solid #ccc; }
+
+.single { width: 5em; height: 5em;}
+
