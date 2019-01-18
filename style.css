@@ -3,17 +3,22 @@
     --ver: red;
     --gre: green;
     --pink: pink;
+    --gold: gold;
+}
+
+svg:hover {
+    --azul: gold;
 }
 
 #fish:hover {
-    fill: var(--ver);
+    --azul: red;
 }
 
 path:hover {
-    fill: var(--gre);
+    --azul: green;
 }
 symbol:hover {
-    fill: var(--gre);
+    --azul: pink;
 }
 
 p {
