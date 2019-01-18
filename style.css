@@ -1,7 +1,11 @@
 :root {
     --azul: blue;
+    --ver: red;
 }
 
+svg:hover {
+    fill: var(--ver);
+}
 p {
     color: var(--azul);
 }
