@@ -1,11 +1,21 @@
 :root {
     --azul: blue;
     --ver: red;
+    --gre: green;
+    --pink: pink;
 }
 
-svg:hover {
+#fish:hover {
     fill: var(--ver);
 }
+
+path:hover {
+    fill: var(--gre);
+}
+symbol:hover {
+    fill: var(--gre);
+}
+
 p {
     color: var(--azul);
 }
