@@ -10,20 +10,11 @@ svg:hover {
     --azul: gold;
 }
 
-#fish:hover {
-    --azul: red;
-}
-
-path:hover {
-    --azul: green;
-}
-symbol:hover {
-    --azul: pink;
-}
 
 p {
     color: var(--azul);
 }
+
 .icon { border: .2em solid #ccc; }
 
 .single { width: 5em; height: 5em;}
