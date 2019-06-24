@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+	html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.base {
+			background: #29a7e8;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+		}
+		.bottom-bar {
+			background: #29a7e8;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			filter: url(#filter);
+		}
+		.circle {
+			display: inline-block;
+			position: relative;
+			top: -10px;
+			border-radius: 100%;
+			background: #29a7e8;
+			width: 60px;
+			height: 60px;
+			margin: 0 1rem;
+		}
+		/* apenas exemplo */
+		.circle:nth-child(2) {
+		-webkit-animation: anima 2s infinite ease;
+				animation: anima 2s infinite ease;
+		}
+		@-webkit-keyframes anima {
+		50% {
+			top: -100px;
+		}
+		}
+		@keyframes anima {
+		50% {
+			top: -100px;
+		}
+		}
+		body {
+		background: url(http://unsplash.it/600/400);
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+		}
+
+</style>
+</head>
+<body>
+	
+
+		<div class="base">
+			<div class="bottom-bar">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+		</div>
+		
+		<svg>
+			<defs>
+				<filter id="filter">
+				<!-- aqui vc controla a curvatura entre a bola e a barra, deixei 5 para ficar acentuado e vc perceber, mas com 3 fica como vc quer mais suave -->
+				<feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/> 
+				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="filter"/>
+				<feComposite in="SourceGraphic" in2="filter" operator="atop"/>
+				</filter>
+			</defs>
+		</svg>
+	
+<script>
+	
+</script>
+	
+</body>
+</html>
